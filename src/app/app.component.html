@@ -1,0 +1,22 @@
+<form [formGroup]="form">
+    <mat-checkbox *ngFor="let cd of columnDefinitions"  [formControlName]="cd.def">{{cd.label}}</mat-checkbox>
+</form>
+<button (click)="updateColumn()">update column</button>
+
+<mat-table class="mat-elevation-z8" [dataSource]="dataSource">
+	<ng-container matColumnDef="id">
+		<mat-header-cell *matHeaderCellDef>ID</mat-header-cell>
+		<mat-cell *matCellDef="let row;">{{row.id}}</mat-cell>
+	</ng-container>
+	<ng-container matColumnDef="description">
+		<mat-header-cell *matHeaderCellDef>Description</mat-header-cell>
+		<mat-cell *matCellDef="let row;">{{row.description}}</mat-cell>
+	</ng-container>
+	<ng-container matColumnDef="company">
+		<mat-header-cell *matHeaderCellDef>Company</mat-header-cell>
+		<mat-cell *matCellDef="let row;">{{row.company}}</mat-cell>
+	</ng-container>
+	<mat-header-row *matHeaderRowDef="columns">
+	</mat-header-row>
+	<mat-row *matRowDef="let row; columns: columns"></mat-row>
+</mat-table>

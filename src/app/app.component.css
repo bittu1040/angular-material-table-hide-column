@@ -1,0 +1,11 @@
+p {
+  font-family: Lato;
+}
+
+mat-checkbox {
+  margin: 1rem;
+}
+
+mat-table { 
+  margin-top: 1rem; 
+}

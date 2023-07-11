@@ -70,7 +70,7 @@ export class AppComponent implements AfterViewInit {
     //     this.getDisplayedColumns();
     //   });
 
-    // this.getDisplayedColumns();
+    // this.getDisplayedColumns(); 
 
     this.cdref.detectChanges();
   }

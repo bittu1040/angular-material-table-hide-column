@@ -25,6 +25,30 @@ export class AppComponent implements AfterViewInit {
         complete: false,
         company: 'tcs',
       },
+      {
+        id: '123',
+        description: 'Complete me!',
+        complete: false,
+        company: 'infosys',
+      },
+      {
+        id: '123',
+        description: 'Complete me!',
+        complete: false,
+        company: 'techM',
+      },
+      {
+        id: '123',
+        description: 'Complete me!',
+        complete: false,
+        company: 'Cognizant',
+      },
+      {
+        id: '123',
+        description: 'Complete me!',
+        complete: false,
+        company: 'IBM',
+      },
     ];
     this.dataSource = new MatTableDataSource(todos);
   }
